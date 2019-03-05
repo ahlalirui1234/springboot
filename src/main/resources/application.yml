@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  kafka:
+    producer:
+      retries: 1
+      bootstrap-servers: 192.168.78.128:9092
+    consumer:
+      bootstrap-servers: 192.168.78.128:9092
+      retries: 1
+      group-id: group1
+      enable-auto-commit: true
+logging:
+  level:
+    root: INFO
