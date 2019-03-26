@@ -5,7 +5,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 
 public class MessageListener {
 
-    @KafkaListener(topics = {"test"}, groupId = "group1")
+    @KafkaListener(topics = {"test1"}, groupId = "group1")
     public void listen(ConsumerRecord<String, ?> record){
         System.out.print("receive message:"+record.value().toString());
     }

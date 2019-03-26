@@ -14,13 +14,13 @@ public class KafkaController {
 
     @GetMapping
     public String sendKafka(){
+        System.out.print("producer is null?" + (null == producer));
         try {
             producer.send();
-            
         } catch (Exception e) {
             System.out.print("===="+e.toString());
         }
-        return "Hello, Yang yan";
+        return "Hello, World!";
     }
 
 }
