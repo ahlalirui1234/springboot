@@ -7,8 +7,12 @@ spring:
       bootstrap-servers: 192.168.78.128:9092
     consumer:
       bootstrap-servers: 192.168.78.128:9092
-      retries: 1
-      group-id: group1
+  redis:
+    database: 0
+    host: 192.168.78.128
+    port: 6379
+    password:
+
 logging:
   level:
     root: INFO
