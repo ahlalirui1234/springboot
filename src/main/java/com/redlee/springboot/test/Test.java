@@ -1,11 +1,10 @@
 package com.redlee.springboot.test;
 
-import java.util.HashMap;
-import java.util.concurrent.ConcurrentHashMap;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 
 public class Test {
     public static void main(String[] args) {
-        HashMap map;
-        ConcurrentHashMap concurrentHashMap;
+
     }
 }
